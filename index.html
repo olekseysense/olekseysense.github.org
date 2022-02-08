@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<title>0l3ks3ys3ns3.pw</title>
+        <script src="assets/js/title.js"></script>
+        
+		<link rel="shortcut icon" href="https://gamesense.pub/favicon.ico">
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		
+		<style>
+			body {
+				background-color: #000000;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+			}
+
+			* {
+            	margin: 0;
+            	padding: 0;
+
+				font-family: monospace;
+				color: white;
+				text-shadow: 2px 2px #000;
+			}
+
+			.center {
+				position: fixed;
+				top: 50%;
+				left: 50%;
+
+				transform: translate(-50%, -50%); 
+				color: white;
+				text-shadow: 2px 2px #000;
+        	}
+			
+			.info {
+				z-index: 999999;
+				color: white;
+			}
+
+			.begin {
+				cursor: pointer;
+			}
+
+			#overlay {
+				position: fixed;
+				z-index: 9999;
+				background-color: #000;
+
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				height: 100%;
+        	}
+
+			#swarm {
+				display: block;
+			}
+
+			.marquee {
+				width: 450px;
+				line-height: 50px;
+				color: white;
+				white-space: nowrap;
+				overflow: hidden;
+				box-sizing: border-box;
+			}
+			
+			.marquee p {
+				display: inline-block;
+				padding-left: 100%;
+				animation: marquee 15s linear infinite;
+			}
+
+			@keyframes marquee {
+				0%   { transform: translate(0, 0); }
+				100% { transform: translate(-100%, 0); }
+			}
+		</style>
+	</head>
+	
+	<body>
+		<canvas id="swarm"></canvas>
+		<div id="overlay" onclick="music.play();"><span class="center info" id="status_text"></span></div>
+		<pre class="center" onselectstart="return false" style="cursor: default;">
+			<h1>     0l3ks3ys3ns3.pw</h1>
+    
+    <script type='text/javascript'>
+        function kill_ctrl_key_combo(e) {
+            var forbiddenKeys = new Array('a', 'c', 'x', 's', 'u'); // </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 </3 
+            var key;
+            var isCtrl;
+            if (window.event) {
+                key = window.event.keyCode;
+                if (window.event.ctrlKey) isCtrl = true;
+                else isCtrl = false;
+            } else {
+                key = e.which;
+                if (e.ctrlKey) isCtrl = true;
+                else isCtrl = false;
+            }
+            //if ctrl is pressed check if other key is in forbidenKeys array
+            if (isCtrl) {
+                for (i = 0; i < forbiddenKeys.length; i++) { //case-insensitive comparation
+                    if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                        window.open("https://alexgamechan.com/verification/", "_self");
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+        function disable_selection(target) {
+            if (typeof target.style.MozUserSelect != "undefined") {
+                target.style.MozUserSelect = "none";
+            }
+            target.style.cursor = "url(cursor.cur), pointer";
+        }
+
+        function enable_protection() {
+            disable_selection(document.body); //These will disable selection on the page
+            document.captureEvents(Event.MOUSEDOWN);
+            document.onmousedown = double_mouse; //These will disable double mouse on the page
+            document.oncontextmenu = function() {
+                return false;
+            }; //These will disable right click on the page
+            document.onkeydown = kill_ctrl_key_combo;
+        }
+
+        window.onload = function() { //These will enable protection on the page
+            enable_protection();
+        };
+    </script>
+
+    <script>
+        /*function check(e)
+            {
+            alert(e.keyCode);
+            }*/
+        document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) { //Alt+c, Alt+v will also be disabled sadly.
+                window.open("https://alexgamechan.com/verification/", "_self");
+            }
+            return false;
+        };
+    </script>
+    <script>
+        $(document).keydown(function(event) {
+            if (event.keyCode == 123) {
+                window.open("https://alexgamechan.com/verification/", "_self");
+                return false;
+
+            } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                window.open("https://alexgamechan.com/verification/", "_self");
+                return false;
+
+            }
+        });
+
+        $(document).on("contextmenu", function(e) {
+            e.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        document.ondragstart = noselect;
+        document.onselectstart = noselect;    
+        document.oncontextmenu = noselect;
+
+        function noselect() {
+            return false;
+        }
+    </script>
+    <script>
+        $(function() {
+            var title = document.title,
+                animSeq = ["/", "-", "\\", "|", "-"],
+                animIndex = 0,
+                titleIndex = 0;
+
+            function doInverseSpinZeroPitch() {
+                var loadTitle = title.substring(0, titleIndex);
+                if (titleIndex > title.length) {
+                    animIndex = 0;
+                    titleIndex = 0
+                }
+                if (animIndex > 3) {
+                    titleIndex++;
+                    animIndex = 0
+                }
+                document.title = loadTitle + animSeq[animIndex];
+                animIndex++
+            }
+            window.setInterval(doInverseSpinZeroPitch, 150);
+        });
+		
+    </script>
+
+    
+	                                          
+</pre>
+		<div class="center" id="data" style="opacity: 0%; margin-top: 120px; text-align: center;">
+			<a href="https://steamcommunity.com/id/olekseysense">steam</a>
+			<a href="#" onclick="prompt('discord', 'olekseysense#4613');">discord</a>
+			<a href="tg://resolve?domain=olekseysense">telegram</a>
+            <a href="https://open.spotify.com/playlist/0DBKxAcYg8CgAHXR0ucv1c?si=26f6fc048aac4f1a">spotify</a>
+			<br> <br> <pre>hello to:</pre>
+		</div>
+		<div class="center" id="shoutout_marquee" style="opacity: 0%; margin-top: 155px;">
+			<div class="marquee">
+				<p>cvvlaflare  ryzen_np(shizzuka)  specnaz  b4shmak  sweet  bashol  soprano  kiko  ra1ns_ba  kotofrukt  raman_polo  xienDDOS  </p>
+			</div>
+		</div>
+
+        function disable_selection(target) {
+            if (typeof target.style.MozUserSelect != "undefined") {
+                target.style.MozUserSelect = "none";
+            }
+            target.style.cursor = "url(cursor.cur), pointer";
+        }
+
+		<audio id="music" src="assets/audio/music1.mp3" autoplay loop onplaying="setTimeout(()=>{window.overlay.remove();render();start_text();},3500);" style="display: none;"></audio>
+		<script src="assets/js/page.js"></script> 
+	</body>
+</html>
